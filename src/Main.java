@@ -22,10 +22,10 @@ public class Main {
         int sumSalary = book.calculateSumSalary();
         System.out.println("Сумма затрат на ЗП в месяц - " + sumSalary);
 
-        Employee minSalaryWorker = book.minSalary();
+        Employee minSalaryWorker = book.findMinSalary();
         System.out.println("Минимальная зарплата: " + minSalaryWorker);
 
-        Employee maxSalaryWorker = book.maxSalary();
+        Employee maxSalaryWorker = book.findMaxSalary();
         System.out.println("Максимальная зарплата: " + maxSalaryWorker);
 
         double averageSalaryWorker = book.averageSalary();
@@ -40,10 +40,10 @@ public class Main {
         book.printWorkers();
 
         System.out.println();
-        minSalaryWorker = book.minSalary(1);
+        minSalaryWorker = book.findMinSalary(1);
         System.out.println("Минимальная зарплата в отделе - " + minSalaryWorker);
 
-        maxSalaryWorker = book.maxSalary(1);
+        maxSalaryWorker = book.findMaxSalary(1);
         System.out.println("Максимальная зарплата в отделе - " + maxSalaryWorker);
 
         int sumSalaryInDepartment = book.calculateSumSalary(4);
