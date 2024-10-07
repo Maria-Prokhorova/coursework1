@@ -6,10 +6,10 @@ public class Employee {
     public static int counter = 1;
 
     // поля класса
-    private String fullName;
+    private final String fullName;
     private int department;
     private int salary;
-    private int id;
+    private final int id;
 
     // конструктор
     public Employee(String fullName, int department, int salary) {
